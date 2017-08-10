@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Prácticas con etiquetas svg complementarias</title>
+  </head>
+  <body>
+      <svg width="950px" height="450px" style="border: 2px solid black" viewBox="0 5 950 450">
+        <g id="EtiquetaG" stroke="yellow" stroke-width="5">
+          <line x1="0" y1="100" x2="25" y2="100"/>
+          <line x1="0" y1="125" x2="25" y2="112"/>
+          <line x1="25" y1="150" x2="37" y2="125"/>
+          <line x1="50" y1="150" x2="50" y2="125"/>
+          <line x1="75" y1="150" x2="62" y2="125"/>
+          <line x1="100" y1="125" x2="75" y2="112"/>
+          <line x1="100" y1="100" x2="75" y2="100"/>
+          <line x1="100" y1="75" x2="75" y2="87"/>
+          <line x1="75" y1="50" x2="62" y2="80"/>
+          <line x1="50" y1="50" x2="50" y2="75"/>
+          <line x1="25" y1="50" x2="37" y2="80"/>
+          <line x1="0" y1="75" x2="25" y2="87"/>
+        </g>
+        <defs>
+          <linearGradient id="CopaArbol">
+            <stop offset="20%" stop-color="#06EC07"/>
+            <stop offset="60%" stop-color="#054005"/>
+            <stop offset="90%" stop-color="#80850D"/>
+          </linearGradient>
+        </defs>
+          <ellipse rx="50" ry="100" cx="60" cy="260" fill="url(#CopaArbol)"/>
+          <ellipse rx="50" ry="100" cx="130" cy="280" fill="url(#CopaArbol)"/>
+          <ellipse rx="50" ry="100" cx="200" cy="300" fill="url(#CopaArbol)"/>
+        <defs>
+          <rect id="TroncoArbol" fill="brown" stroke="brown" stroke-width="1" width="30" height="60"/>
+        </defs>
+        <use x="45" y="355" xlink:href="#TroncoArbol"/>
+        <use x="115" y="375" xlink:href="#TroncoArbol"/>
+        <use x="185" y="395" xlink:href="#TroncoArbol"/>
+      </svg>
+  </body>
+</html>
