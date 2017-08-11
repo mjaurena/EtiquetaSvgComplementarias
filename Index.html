@@ -6,7 +6,7 @@
     <title>Prácticas con etiquetas svg complementarias</title>
   </head>
   <body>
-      <svg width="950px" height="450px" style="border: 2px solid black" viewBox="0 5 950 450">
+      <svg width="950px" height="450px" style="border: 2px solid blue" viewBox="0 5 950 450">
         <g id="EtiquetaG" stroke="yellow" stroke-width="5">
           <line x1="0" y1="100" x2="25" y2="100"/>
           <line x1="0" y1="125" x2="25" y2="112"/>
@@ -37,6 +37,41 @@
         <use x="45" y="355" xlink:href="#TroncoArbol"/>
         <use x="115" y="375" xlink:href="#TroncoArbol"/>
         <use x="185" y="395" xlink:href="#TroncoArbol"/>
+        <polyline points="0,400 40,415 50,425 100,435 150,445 200,455" fill="none" stroke="brown" stroke-width="6"/>
+        <defs>
+          <linearGradient id="Montaña">
+            <stop offset="20%" stop-color="#F8C471"/>
+            <stop offset="40%" stop-color="#F5B041"/>
+            <stop offset="70%" stop-color="#F39C12"/>
+            <stop offset="90%" stop-color="#D68910"/>
+          </linearGradient>
+        </defs>
+        <polyline points="200,200 350,100 450,85 650,280 800,200 900,350 1000,380" fill="url(#Montaña)"/>
+        <rect x="360" y= "355" width="150" height="105" fill="yellow"/>
+        <polygon points="350,355 435,250 520,355" fill="red" stroke="brown" stroke-width="6"/>
+        <rect x="410" y="400" width="50" height="55" fill="brown"/>
+        <polygon points= "460,285 460,250 480,250 480,311" fill="brown"/>
+        <defs>
+          <linearGradient id="Humo">
+            <stop offset="30%" stop-color="#EAECEE"/>
+            <stop offset="60%" stop-color="#566573"/>
+          </linearGradient>
+        </defs>
+          <circle cx="470" cy="240" r="10" fill="url(#Humo)"/>
+          <circle cx="470" cy="230" r="10" fill="url(#Humo)"/>
+          <circle cx="480" cy="220" r="10" fill="url(#Humo)"/>
+          <circle cx="490" cy="210" r="10" fill="url(#Humo)"/>
+          <circle cx="500" cy="200" r="10" fill="url(#Humo)"/>
+          <circle cx="510" cy="190" r="10" fill="url(#Humo)"/>
+          <path d="M 220 200 C 250 200, 300 250, 350 230, 400 250, 410 230, 425 250" stroke="#F39C12" stroke-width="20" fill="transparent"/>
+          <path d="M 485 250 C 650 280, 750 330, 950 360 z" stroke="#F39C12" stroke-width="20" fill="transparent"/>
+          <path d="M 600 150 Q 610 130 620 160" stroke="#1D85E7" stroke-width="5" fill="transparent"/>
+          <path d="M 620 160 Q 630 140 640 170" stroke="#1D85E7" stroke-width="5" fill="transparent"/>
+          <path d="M 640 100 Q 650 80 660 110" stroke="#1D85E7" stroke-width="5" fill="transparent"/>
+          <path d="M 660 110 Q 670 90 680 120" stroke="#1D85E7" stroke-width="5" fill="transparent"/>
+          <path d="M 560 80 Q 570 60 580 90" stroke="#1D85E7" stroke-width="5" fill="transparent"/>
+          <path d="M 580 90 Q 590 70 600 100" stroke="#1D85E7" stroke-width="5" fill="transparent"/>
+          <image xlink:href="auto.png" widht="450" height="120" x="650" y="350"</image>
       </svg>
   </body>
 </html>
